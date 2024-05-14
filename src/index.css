@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'msFont';
+  src: url('../public/fonts/Maplestory/Bold.ttf format') format('woff2'), url('../public/fonts/Maplestory/Light.ttf') format('woff');
+}
+
+* {
+  cursor: url(https://cur.cursors-4u.net/games/gam-4/gam308.cur), auto !important;
+}
+
+body {
+}
+
+h1 {
+  @apply text-4xl font-bold text-gray-900; /* Apply Tailwind utility classes */
+}
+
+h2 {
+  @apply text-3xl font-bold text-gray-800; /* Apply Tailwind utility classes */
+}
