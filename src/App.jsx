@@ -6,6 +6,8 @@ import Shop from './components/Shop'
 import About from './components/About'
 import Explore from './components/Explore'
 import Play from './components/Play'
+import SignUp from './components/SignUp'
+import Login from './components/Login'
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
         <Route path='/shop' element={<Shop />} />
         <Route path='/about' element={<About />} />
         <Route path='/explore' element={<Explore />} />
-        <Route path='play' element={<Play />} />
+        <Route path='/play' element={<Play />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/404' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
