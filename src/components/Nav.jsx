@@ -39,13 +39,13 @@ const Nav = () => {
   useClickAway(ref, () => setOpen(false))
 
   return (
-    <div className='flex justify-between items-center mx-2 md:mx-10 '>
+    <div className='flex justify-between items-center px-2 md:px-10 md:bg-[#333333]'>
       <Link path='/'>
         <img className='w my-2' src={Logo} />
       </Link>
       {/* Hamburger Icon */}
       <div ref={ref} className='md:hidden'>
-        <Hamburger toggled={isOpen} toggle={setOpen} size={20} color='#4FD1C5' label='Show menu' />
+        <Hamburger toggled={isOpen} toggle={setOpen} size={20} color='#f68d12' label='Show menu' />
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -53,7 +53,7 @@ const Nav = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className='fixed left-0 shadow-4xl right-0 top-[7rem] p-5 pt-0'
+              className='fixed left-0 shadow-4xl right-0 top-[7rem] p-5 pt-0 '
             >
               <ul className='grid gap-2'>
                 {routes.map((route, idx) => {
@@ -75,9 +75,9 @@ const Nav = () => {
                       <Link
                         to={path}
                         onClick={() => setOpen(prev => !prev)}
-                        className={'flex items-center justify-between w-full p-5 rounded-xl bg-[#4FD1C5]'}
+                        className={'flex items-center justify-between w-full p-5 rounded-xl bg-[#f68d12] '}
                       >
-                        <span className='flex gap-1 text-lg text-white font-[Glegoo]'>{title}</span>
+                        <span className='flex gap-1 text-lg text-white'>{title}</span>
                         <Icon className='text-xl text-white' />
                       </Link>
                     </motion.li>
@@ -95,7 +95,7 @@ const Nav = () => {
             const { Icon, path, title } = route
             return (
               <li key={index}>
-                <Link to={path} className='flex items-center gap-1 hover:text-neutral-400 transition-all'>
+                <Link to={path} className='flex items-center gap-1 hover:text-neutral-400 transition-all text-white'>
                   <Icon />
                   {title}
                 </Link>
