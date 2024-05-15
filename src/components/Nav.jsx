@@ -41,8 +41,8 @@ const Nav = () => {
   return (
     <div className='bg-[#333333]'>
       <nav className='flex justify-between items-center px-4 lg:px-10 container mx-auto   '>
-        <Link path='/'>
-          <img className='w my-2' src={Logo} />
+        <Link to='/'>
+          <img className='py-2 hover:opacity-75' src={Logo} />
         </Link>
         {/* Hamburger Icon */}
         <div ref={ref} className='md:hidden'>
@@ -96,7 +96,7 @@ const Nav = () => {
               const { Icon, path, title } = route
               return (
                 <li key={index}>
-                  <Link to={path} className='flex items-center gap-1 hover:text-neutral-400 transition-all text-white hover:scale-110'>
+                  <Link to={path} className='flex items-center gap-1 hover:text-neutral-400 transition-all text-white hover:scale-110 '>
                     <Icon />
                     {title}
                   </Link>
