@@ -26,7 +26,10 @@ const Login = ({ toggleView }) => {
           <img src={logo} alt='Logo' className='lg:absolute lg:top-0 lg:left-0 p-4 hover:opacity-75' />
         </Link>
 
-        <form onSubmit={handleFormSubmit} className=' p-8 flex flex-col bg-white rounded-2xl shadow-2xl w-[90%] sm:w-[75%] md:w-[50%] xl:w-[30%]'>
+        <form
+          onSubmit={handleFormSubmit}
+          className=' p-8 flex flex-col bg-white rounded-2xl shadow-2xl w-[90%] sm:w-[75%] md:w-[50%] xl:w-[30%] bg-opacity-90'
+        >
           <h1 className='text-center text-2xl md:text-3xl mb-4 font-[maplestory] text-gray-700'>Login</h1>
           <div className='mb-4'>
             <label className='block text-gray-700 text-sm font-bold mb-2 '>Email:</label>

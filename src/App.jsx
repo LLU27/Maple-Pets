@@ -20,7 +20,8 @@ const App = () => {
         <Route path='/play' element={<Play />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/404' element={<ErrorPage />} />
+        {/* 404 route */}
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   )
