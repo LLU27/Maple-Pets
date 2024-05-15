@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'msFont';
-  src: url('../public/fonts/Maplestory/Bold.ttf format') format('woff2'), url('../public/fonts/Maplestory/Light.ttf') format('woff');
+  font-family: 'Maplestory';
+  src: url('/src/assets/fonts/MaplestoryL.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
