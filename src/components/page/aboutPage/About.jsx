@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from './Nav'
-const Shop = () => {
+import Nav from '../../Nav'
+const About = () => {
   return (
     <>
       <Nav />
@@ -8,4 +8,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default About

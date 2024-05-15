@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import signupBG from '../assets/Images/signup.png'
+import signupBG from '../../../assets/Images/signup.png'
 import { Link } from 'react-router-dom'
-import logo from '../assets/Images/logo.svg'
+import logo from '../../../assets/Images/logo.svg'
 
 const SignUp = ({ toggleView }) => {
   const [userInfo, setUserInfo] = useState({

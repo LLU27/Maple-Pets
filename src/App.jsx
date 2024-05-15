@@ -1,13 +1,13 @@
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './components/Home'
+import Home from './components/page/homePage/Home'
 import ErrorPage from './components/ErrorPage'
-import Shop from './components/Shop'
-import About from './components/About'
-import Explore from './components/Explore'
-import Play from './components/Play'
-import SignUp from './components/SignUp'
-import Login from './components/Login'
+import Shop from './components/page/shopPage/Shop'
+import About from './components/page/aboutPage/About'
+import Explore from './components/page/explorePage/Explore'
+import Play from './components/page/playPage/Play'
+import SignUp from './components/page/playPage/SignUp'
+import Login from './components/page/playPage/Login'
 
 const App = () => {
   return (
