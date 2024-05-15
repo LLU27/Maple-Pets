@@ -36,9 +36,9 @@ const SignUp = ({ toggleView }) => {
           <img src={logo} alt='Logo' className='lg:absolute lg:top-0 lg:left-0 p-4 hover:opacity-75' />
         </Link>
         <form onSubmit={handleFormSubmit} className='p-8 flex flex-col bg-white rounded-2xl shadow-2xl w-[90%] sm:w-[75%] md:w-[50%] xl:w-[30%]'>
-          <h1 className='text-center text-2xl md:text-3xl mb-4 font-maplestory'>Sign Up</h1>
+          <h1 className='text-center text-2xl md:text-3xl mb-4 font-[maplestory] text-gray-700 '>Sign Up</h1>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>First Name:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>First Name:</label>
             <input
               className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight '
               type='text'
@@ -49,9 +49,9 @@ const SignUp = ({ toggleView }) => {
           </div>
 
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>Last Name:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>Last Name:</label>
             <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight font-maplestory'
+              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight '
               type='text'
               name='lastName'
               value={userInfo.lastName}
@@ -59,7 +59,7 @@ const SignUp = ({ toggleView }) => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>Email:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>Email:</label>
             <input
               className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight '
               type='email'
@@ -70,7 +70,7 @@ const SignUp = ({ toggleView }) => {
           </div>
 
           <div className='mb-6'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>Password:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>Password:</label>
             <input
               className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight '
               type='password'
@@ -82,11 +82,11 @@ const SignUp = ({ toggleView }) => {
           <div className='flex flex-col gap-4 items-center justify-between'>
             <button
               type='submit'
-              className='bg-[#f68d12] border-2 px-10 py-2 font-bold lg:text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e] hover:scale-105 transform transition-transform duration-300 ease-in-out font-maplestory w-full md:w-1/2'
+              className='bg-[#f68d12] border-2 px-10 py-2 font-bold lg:text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e] hover:scale-105 transform transition-transform duration-300 ease-in-out  w-full md:w-1/2'
             >
               Sign Up
             </button>
-            <button type='button' onClick={toggleView} className='ml-4 text-[#f68d12] underline font-maplestory hover:text-blue-400 transition-all'>
+            <button type='button' onClick={toggleView} className='ml-4 text-[#f68d12] underline  hover:text-blue-400 transition-all'>
               Have an account already?
               <br></br>
               Login Now

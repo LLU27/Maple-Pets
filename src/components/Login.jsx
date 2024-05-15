@@ -27,9 +27,9 @@ const Login = ({ toggleView }) => {
         </Link>
 
         <form onSubmit={handleFormSubmit} className=' p-8 flex flex-col bg-white rounded-2xl shadow-2xl w-[90%] sm:w-[75%] md:w-[50%] xl:w-[30%]'>
-          <h1 className='text-center text-2xl md:text-3xl mb-4 font-maplestory'>Login</h1>
+          <h1 className='text-center text-2xl md:text-3xl mb-4 font-[maplestory] text-gray-700'>Login</h1>
           <div className='mb-4'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>Email:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>Email:</label>
             <input
               type='email'
               name='email'
@@ -40,7 +40,7 @@ const Login = ({ toggleView }) => {
           </div>
 
           <div className='mb-6'>
-            <label className='block text-gray-700 text-sm font-bold mb-2 font-maplestory'>Password:</label>
+            <label className='block text-gray-700 text-sm font-bold mb-2 '>Password:</label>
             <input
               type='password'
               name='password'
@@ -53,11 +53,11 @@ const Login = ({ toggleView }) => {
           <div className='flex flex-col gap-4 items-center justify-between'>
             <button
               type='submit'
-              className='bg-[#f68d12] border-2 px-10 py-2 font-bold lg:text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e] hover:scale-105 transform transition-transform duration-300 ease-in-out font-maplestory w-full md:w-1/2'
+              className='bg-[#f68d12] border-2 px-10 py-2 font-bold lg:text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e] hover:scale-105 transform transition-transform duration-300 ease-in-out  w-full md:w-1/2'
             >
               Log In
             </button>
-            <button type='button' onClick={toggleView} className='ml-4 text-[#f68d12] underline font-maplestory hover:text-blue-400 transition-all '>
+            <button type='button' onClick={toggleView} className='ml-4 text-[#f68d12] underline  hover:text-blue-400 transition-all '>
               Don't have an account? Sign up now!
             </button>
           </div>

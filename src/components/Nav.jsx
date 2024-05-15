@@ -40,7 +40,7 @@ const Nav = () => {
 
   return (
     <div className='bg-[#333333]'>
-      <nav className='flex justify-between items-center px-4 lg:px-10 container mx-auto   '>
+      <nav className='flex justify-between items-center px-4 lg:px-10 container mx-auto'>
         <Link to='/'>
           <img className='py-2 hover:opacity-75' src={Logo} />
         </Link>
@@ -78,7 +78,7 @@ const Nav = () => {
                           onClick={() => setOpen(prev => !prev)}
                           className={'flex items-center justify-between w-full p-5 rounded-xl bg-[#f68d12] '}
                         >
-                          <span className='flex gap-1 text-lg text-white'>{title}</span>
+                          <span className='flex gap-1 text-lg text-white '>{title}</span>
                           <Icon className='text-xl text-white' />
                         </Link>
                       </motion.li>
@@ -106,7 +106,7 @@ const Nav = () => {
           </ul>
         </div>
         <Link className='hidden md:flex' to='/play'>
-          <button className='bg-[#f68d12] border-2 px-10 py-2 font-bold text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e]  hover:scale-105 transform transition-transform duration-300 ease-in-out'>
+          <button className='bg-[#f68d12] border-2 px-10 py-2 font-bold text-[17px] text-white rounded-[5rem] hover:bg-[#e07a0e]  hover:scale-105 transform transition-transform duration-300 ease-in-out '>
             Play Now
           </button>
         </Link>
