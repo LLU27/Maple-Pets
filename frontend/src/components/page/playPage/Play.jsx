@@ -12,7 +12,7 @@ const Play = () => {
 
   useEffect(() => {
     // Simulate checking user authentication status
-    const isAuthenticated = true
+    const isAuthenticated = false;
     setAuth(isAuthenticated)
   }, [])
 
