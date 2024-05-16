@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 const MonsterCard = () => {
   const [mobs, setMobs] = useState([])
   const [loading, setLoading] = useState(true)
@@ -24,7 +24,7 @@ const MonsterCard = () => {
         }
       })
       setMobs(uniqueMobs)
-      
+
       /*2nd way
       Extract unique mob names from limitedMobs using a Set
 
@@ -64,17 +64,19 @@ const MonsterCard = () => {
   }
 
   return (
-    <div className='container mx-auto py-6'>
+    <div className='container mx-auto p-4'>
       <h2 className='text-2xl font-bold mb-4'>Mob List</h2>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 '>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2'>
         {mobs.map((mob, index) => (
-          <div key={index} className='bg-white shadow-lg rounded-lg p-4'>
-            <img src={`https://maplestory.io/api/GMS/250/mob/${mob.id}/render/move`} alt={mob.name} className='m-auto' />
-            <div className='p-4 text-center'>
-              <h3 className='text-lg font-semibold mb-2'>{mob.name}</h3>
-              <p className=''>Level {mob.level}</p>
+          <Link key={index} to={`/monster/${mob.id}`}>
+            <div key={index} className='bg-white shadow-lg rounded-lg p-4'>
+              <img src={`https://maplestory.io/api/GMS/250/mob/${mob.id}/icon`} alt={mob.name} className='m-auto' />
+              <div className='p-4 text-center'>
+                <h3 className='text-lg font-semibold mb-2'>{mob.name}</h3>
+                <p className=''>Level {mob.level}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

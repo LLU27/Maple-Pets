@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Maplestory';
-  src: url('/src/assets/fonts/MaplestoryL.ttf') format('opentype');
+  src: url('/frontend/src/assets/fonts/MaplestoryL.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'MaplestoryBold';
-  src: url('/src/assets/fonts/MaplestoryB.ttf') format('opentype');
+  src: url('/frontend/src/assets/fonts/MaplestoryB.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
