@@ -54,7 +54,7 @@ const Nav = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className='fixed left-0 shadow-4xl right-0 top-[8rem] p-5 pt-0 '
+                className='fixed left-0 shadow-4xl right-0 top-[7.25rem] p-5 py-6 z-10 bg-[#333333] h-screen'
               >
                 <ul className='grid gap-2'>
                   {routes.map((route, idx) => {

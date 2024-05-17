@@ -8,20 +8,20 @@ import Explore from './components/page/explorePage/Explore'
 import Play from './components/page/playPage/Play'
 import SignUp from './components/page/playPage/SignUp'
 import Login from './components/page/playPage/Login'
-import MonsterDetail from './components/MonsterDetail'
+import SingleMonster from './components/SingleMonster'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path='/' exact element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/about' element={<About />} />
         <Route path='/explore' element={<Explore />} />
         <Route path='/play' element={<Play />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/monster/:id' element={<MonsterDetail />} />
+        <Route path='/monster/:id' element={<SingleMonster />} />
         {/* 404 route */}
         <Route path='*' element={<ErrorPage />} />
       </Routes>

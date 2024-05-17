@@ -1,11 +1,11 @@
 import React from 'react'
 import Nav from '../../Nav'
-import MonsterCard from '../../MonsterCard'
+import Monsters from '../../Monsters'
 const Explore = () => {
   return (
     <>
       <Nav />
-      <MonsterCard />
+      <Monsters />
     </>
   )
 }

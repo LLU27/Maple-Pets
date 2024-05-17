@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
+import SingleMonsterCard from './SingleMonsterCard'
+import Nav from './Nav'
 
 const MonsterDetail = () => {
   let { id } = useParams()
@@ -22,8 +24,11 @@ const MonsterDetail = () => {
     }
   }
 
+  // checkSummonType
+
   useEffect(() => {
     fetchSingleMonster(id)
+    console.log(monster)
   }, [id])
   // Fetch individual monster details based on the id and display them
 
@@ -40,17 +45,14 @@ const MonsterDetail = () => {
   }
 
   return (
-    <div>
-      <h2>Monster Detail Page</h2>
-      <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-        Back
-      </button>
-      <p>Display details for monster with id: {id}</p>
-      <div className='bg-white shadow-lg rounded-lg p-4'>
-        <img src={`https://maplestory.io/api/GMS/250/mob/${monster.id}/render/move`} alt={monster.name} className='m-auto' />
-        <div className='p-4 text-center'>
-          <h3 className='text-lg font-semibold mb-2'>{monster.name}</h3>
-          <p>Level {monster.meta ? monster.meta.level : 'N/A'}</p>
+    <div className=''>
+      <Nav />
+      <div className='container m-auto'>
+        <SingleMonsterCard monster={monster} />
+        <div className='w-1/4 m-auto'>
+          <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+            Back
+          </button>
         </div>
       </div>
     </div>
