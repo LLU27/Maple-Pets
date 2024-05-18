@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
 import SingleMonsterCard from './SingleMonsterCard'
 import Nav from './Nav'
-
+import { TiArrowLeftThick } from 'react-icons/ti'
 const MonsterDetail = () => {
   let { id } = useParams()
   const navigate = useNavigate()
@@ -45,15 +45,15 @@ const MonsterDetail = () => {
   }
 
   return (
-    <div className=''>
+    <div>
       <Nav />
-      <div className='container m-auto'>
+
+      <div className='container m-auto my-6 '>
+        <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded '>
+          <TiArrowLeftThick />
+        </button>
         <SingleMonsterCard monster={monster} />
-        <div className='w-1/4 m-auto'>
-          <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-            Back
-          </button>
-        </div>
+        <div></div>
       </div>
     </div>
   )

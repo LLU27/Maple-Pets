@@ -36,6 +36,24 @@ h2 {
   text-shadow: 2px 6px 0 #2669a4;
 }
 
+.cloud {
+  position: absolute;
+  top: 0;
+  background-repeat: repeat-x;
+  width: 6400px;
+  height: 144px;
+  animation: wave 200s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translateZ(0);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media screen and (max-width: 640px) {
   .custom-stroke {
     text-shadow: 1px 4px 0 #2669a4;
