@@ -47,8 +47,8 @@ const MonsterDetail = () => {
     <div>
       <Nav />
 
-      <div className='container m-auto my-6 '>
-        <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded '>
+      <div className='container m-auto my-4 '>
+        <button onClick={() => navigate(-1)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4'>
           <TiArrowLeftThick />
         </button>
         <SingleMonsterCard monster={monster} />
