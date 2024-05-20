@@ -28,7 +28,6 @@ const MonsterDetail = () => {
 
   useEffect(() => {
     fetchSingleMonster(id)
-    console.log(monster)
   }, [id])
   // Fetch individual monster details based on the id and display them
 

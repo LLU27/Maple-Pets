@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from '../../Nav'
 import Monsters from '../../Monsters'
 import clouds from '../../../assets/Images/cloud.svg'

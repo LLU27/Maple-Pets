@@ -11,7 +11,7 @@ const MonsterCard = ({ mob }) => {
       <div className='bg-white p-2 h-24 flex justify-center items-center overflow-hidden rounded-md'>
         {/* Set a fixed height for the image container */}
         <img
-          src={`https://maplestory.io/api/GMS/250/mob/${mob.id}/icon`}
+          src={`https://maplestory.io/api/GMS/250/mob/${mob.id}/render/stand`}
           alt={mob.name}
           className=' ' // Ensure the image fits within the container
         />

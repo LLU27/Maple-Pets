@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SingleMonsterCard = ({monster}) => {
+const SingleMonsterCard = ({ monster }) => {
   return (
     <div className='shadow-lg rounded-lg bg-[#f68d12] p-1 md:p-2 w-[90%] lg:w-[25%] m-auto text-center text-white'>
       <h3 className='text-lg font-semibold mb-2'>{monster.name}</h3>

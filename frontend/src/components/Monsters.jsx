@@ -54,7 +54,6 @@ const Monsters = () => {
 
   useEffect(() => {
     fetchMobs()
-    console.log(mobs)
   }, [])
 
   if (loading) {
@@ -68,7 +67,7 @@ const Monsters = () => {
   return (
     <div className='container mx-auto p-4'>
       <h2 className='text-2xl font-bold mb-4'>Mob List</h2>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 p-2'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols- gap-12 p-2'>
         {mobs.map((mob, index) => (
           <Link key={index} to={`/monster/${mob.id}`}>
             <MonsterCard mob={mob} />
