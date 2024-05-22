@@ -1,7 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
-const SingleMonsterCard = ({ monster }) => {
+const SingleMonsterCard = ({ monster, location, bgm }) => {
   const [isMoving, setIsMoving] = useState(false)
+  const audioRef = useRef(null)
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.play()
+    }
+  }, [])
 
   const toggleAnimation = () => {
     setIsMoving(!isMoving)
@@ -27,8 +34,15 @@ const SingleMonsterCard = ({ monster }) => {
         <p className='text-sm'>Damage : {monster.meta.physicalDamage}</p>
         <p className='text-sm'>Experience + {monster.meta.exp}</p>
         <p className='text-sm'>Summon Type : {monster.meta.summonType}</p>
-        
-
+        {location && <p className='text-sm'>Found at : {`${location.name} - ${location.streetName}`}</p>}
+        {bgm && (
+          <div className='my-4'>
+            <h2>Background Music:</h2>
+            <audio ref={audioRef} controls src={bgm} loop autoPlay>
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        )}
         <button className='mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded' onClick={toggleAnimation}>
           {isMoving ? 'Stand ' : 'Move '}
         </button>
