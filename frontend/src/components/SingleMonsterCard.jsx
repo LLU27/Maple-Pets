@@ -23,7 +23,12 @@ const SingleMonsterCard = ({ monster }) => {
       </div>
 
       <div className='p-4'>
+        <p className='text-sm'>Health : {monster.meta.maxHP}</p>
+        <p className='text-sm'>Damage : {monster.meta.physicalDamage}</p>
         <p className='text-sm'>Experience + {monster.meta.exp}</p>
+        <p className='text-sm'>Summon Type : {monster.meta.summonType}</p>
+        
+
         <button className='mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded' onClick={toggleAnimation}>
           {isMoving ? 'Stand ' : 'Move '}
         </button>

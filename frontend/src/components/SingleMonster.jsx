@@ -28,6 +28,7 @@ const MonsterDetail = () => {
 
   useEffect(() => {
     fetchSingleMonster(id)
+    console.log(monster.meta)
   }, [id])
   // Fetch individual monster details based on the id and display them
 
@@ -52,7 +53,6 @@ const MonsterDetail = () => {
           <TiArrowLeftThick />
         </button>
         <SingleMonsterCard monster={monster} />
-        <div></div>
       </div>
     </div>
   )
