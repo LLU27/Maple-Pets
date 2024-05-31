@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import SingleMonsterCard from './SingleMonsterCard'
 import Nav from './Nav'
 import { TiArrowLeftThick } from 'react-icons/ti'
+import Loading from './Loading'
 
 const MonsterDetail = () => {
   let { id } = useParams()
@@ -50,7 +51,11 @@ const MonsterDetail = () => {
   }, [id])
 
   if (loading) {
-    return <div>Loading...</div>
+    return (
+      <div>
+        <Loading />
+      </div>
+    )
   }
 
   if (error) {

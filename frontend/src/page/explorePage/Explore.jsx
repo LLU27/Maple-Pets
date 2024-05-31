@@ -1,6 +1,6 @@
-import Nav from '../../Nav'
-import Monsters from '../../Monsters'
-import clouds from '../../../assets/Images/cloud.svg'
+import Nav from '../../components/Nav'
+import Monsters from '../../components/Monsters'
+import clouds from '../../assets/Images/cloud.svg'
 const Explore = () => {
   return (
     <>

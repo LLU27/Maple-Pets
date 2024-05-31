@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from '../../Nav'
-import shopBg from '../../../assets/Images/playerBG.png'
+import Nav from '../../components/Nav'
+import shopBg from '../../assets/Images/playerBG.png'
 const Shop = () => {
   return (
     <>

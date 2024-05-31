@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from '../../Nav'
-import playerbg from '../../../assets/Images/playerBG.png'
+import Nav from '../../components/Nav'
+import playerbg from '../../assets/Images/playerBG.png'
 const PlayerDash = () => {
   return (
     <div>

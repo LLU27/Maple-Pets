@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import signupBG from '../../../assets/Images/signup.png'
-import logo from '../../../assets/Images/logo.svg'
+import signupBG from '../../assets/Images/signup.png'
+import logo from '../../assets/Images/logo.svg'
 import { Link } from 'react-router-dom'
 
 const Login = ({ toggleView }) => {

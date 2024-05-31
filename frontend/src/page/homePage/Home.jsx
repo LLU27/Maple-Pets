@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from '../../Nav'
-import homebg from '../../../assets/Images/home.png'
+import Nav from '../../components/Nav'
+import homebg from '../../assets/Images/home.png'
 import { Link } from 'react-router-dom'
 const Home = () => {
   return (

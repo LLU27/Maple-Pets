@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Maplestory';
-  src: url('/frontend/src/assets/fonts/MaplestoryL.ttf') format('opentype');
+  src: url('/public/fonts/MaplestoryL.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'MaplestoryBold';
-  src: url('/frontend/src/assets/fonts/MaplestoryB.ttf') format('opentype');
+  src: url('/public/fonts/MaplestoryB.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,6 +63,7 @@ h2 {
   height: 24px;
   animation: spin 1s linear infinite;
 }
+
 
 @keyframes spin {
   to {

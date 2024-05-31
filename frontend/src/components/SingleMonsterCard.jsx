@@ -44,13 +44,13 @@ const SingleMonsterCard = ({ monsterData }) => {
 
         <div className='my-4'>
           <p className='text-sm mb-2'>Background Music: {location.bgm}</p>
-          <audio ref={audioRef} controls src={location.bgmUrl} loop autoPlay className='w-full'>
+          <audio ref={audioRef} controls src={location.bgmUrl} loop autoPlay={true} className='w-full'>
             Your browser does not support the audio element.
           </audio>
         </div>
 
         <button className='mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded w-full' onClick={toggleAnimation}>
-          {isMoving ? 'Stand' : 'Move Animation'}
+          {isMoving ? 'Stand' : 'Move'}
         </button>
       </div>
     </div>
